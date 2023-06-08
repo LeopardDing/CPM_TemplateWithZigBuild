@@ -4,6 +4,7 @@ project(template)
 include(cmake/CPM.cmake)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_executable(${PROJECT_NAME} main.cpp)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
 
 ########################### fmt #############################
 CPMAddPackage(
